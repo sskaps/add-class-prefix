@@ -1,0 +1,31 @@
+{
+  "name": "add-class-prefix",
+  "version": "1.0.0",
+  "description": "a plugin to add a class prefix",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "yalc publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sskaps/add-class-prefix.git"
+  },
+  "keywords": [
+    "postcss",
+    "prefix"
+  ],
+  "author": "sskaps",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sskaps/add-class-prefix/issues"
+  },
+  "homepage": "https://github.com/sskaps/add-class-prefix#readme",
+  "peerDependencies": {},
+  "dependencies": {
+     "jsdom": "^12.0.0"
+   },
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
