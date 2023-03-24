@@ -11,7 +11,7 @@ class addClassPrefix {
   apply (compiler) {
     const self = this;
     compiler.hooks.emit.tapAsync('addClassPrefix', function (compilation, cb) {
-      if (this.prefix) {
+      if (self.prefix) {
         const { assets } = compilation;
         var keys = Object.keys(assets);
         keys.forEach(async (item) => {
