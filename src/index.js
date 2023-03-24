@@ -1,10 +1,12 @@
+const { getPkgInfo } = require('./utils');
 const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 
 class addClassPrefix {
 
   constructor(options = {}) {
-    this.prefix = options.prefix || '';
+	const { name } = getPkgInfo();
+    this.prefix = options.prefix || name;
     this.version = addClassPrefix.version;
   }
 
@@ -32,6 +34,6 @@ class addClassPrefix {
 
 }
 
-addClassPrefix.version = '1.0.0';
+addClassPrefix.version = '1.0.1';
 
 module.exports = addClassPrefix;

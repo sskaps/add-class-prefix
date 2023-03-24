@@ -25,6 +25,6 @@ module.exports = {
 ### options
 
 1. prefix
-    * type: string, 必选
+    * type: string, 可选
     * 需要被添加的前缀
-    * default: -
+    * default: package.name
